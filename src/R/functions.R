@@ -184,7 +184,7 @@ create_maps_to <- function(df, concept, warn_unmapped_ids = FALSE) {
 }
 
 
-plot_hierachy <- function(concept, concept_relationship) {
+ggplot_hierachy <- function(concept, concept_relationship) {
   if (!require(ggraph)) stop("ggraph is required. Install it with `install.packages('ggraph')`")
   
   # create graph data structure
@@ -211,3 +211,85 @@ plot_hierachy <- function(concept, concept_relationship) {
     ggplot2::theme(panel.background = element_rect(fill = 'white', color = 'white'))
 }
 
+plotly_hierachy <- function(concept, concept_relationship, title = "") {
+  library(tidygraph)
+  library(plotly)
+  library(igraph)
+  library(igraphdata)
+  library(dplyr)
+  library(stringr)
+  
+  # create graph data structure
+  nodes <- concept %>% 
+    filter(id != 0) %>%  # remove the terminal node of the graph
+    mutate(name = concept_name) %>% 
+    select(name) %>% 
+    mutate(display_name = ifelse(str_detect(name, "M_"), str_remove_all(name, "D_\\w+;"), name)) %>% 
+    mutate(display_name = str_trim(display_name)) %>% 
+    mutate(node_type = ifelse(str_detect(name, "M_"), "mechanism", "disease")) %>% 
+    mutate(color = ifelse(node_type == "mechanism", "#eb3434", "#34b4eb")) # mechanisms are red, diseases are blue.
+  
+  edges <- concept_relationship %>% 
+    mutate(from = id_2, to = id_1) %>% 
+    select(from, to) %>% 
+    # remove edges from the terminal node
+    filter(from > 0, to > 0)
+  
+  G <- tbl_graph(nodes, edges)
+  L <- layout.auto(G)
+  
+  nm <- G %>% 
+    activate(nodes) %>% 
+    pull(display_name)
+  
+  # Blue #34b4eb = disease level concepts
+  # Red #eb3434 = mechanism level concepts
+  colors <- G %>% activate(nodes) %>% pull(color)
+  
+  # Create Vertices and Edges
+  vs <- V(G)
+  es <- as.data.frame(get.edgelist(G))
+  
+  Nv <- length(vs)
+  Ne <- length(es[1]$V1)
+  
+  # Create Nodes
+  Xn <- L[,1]
+  Yn <- L[,2]
+  
+  names(Xn) <- G %>% activate(nodes) %>% pull(name)
+  names(Yn) <- G %>% activate(nodes) %>% pull(name)
+  
+  # network <- plot_ly(x = ~Xn, y = ~Yn, mode = "markers", text = vs$label, hoverinfo = "text")
+  network <- plot_ly(x = ~Xn, y = ~Yn, type = "scatter", mode = "markers", text = nm, hoverinfo = "text", marker = list(color = colors))
+  
+  # Creates Edges
+  edge_shapes <- list()
+  for(i in 1:Ne) {
+    v0 <- es[i,]$V1
+    v1 <- es[i,]$V2
+    
+    edge_shape = list(
+      type = "line",
+      line = list(color = "#030303", width = 0.3),
+      x0 = Xn[v0],
+      y0 = Yn[v0],
+      x1 = Xn[v1],
+      y1 = Yn[v1]
+    )
+    
+    edge_shapes[[i]] <- edge_shape
+  }
+  
+  # Create Network
+  axis <- list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE)
+  
+  fig <- layout(
+    network,
+    title = title,
+    shapes = edge_shapes,
+    xaxis = axis,
+    yaxis = axis
+  )
+  fig
+}

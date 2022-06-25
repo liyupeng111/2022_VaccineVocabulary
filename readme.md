@@ -131,13 +131,66 @@ The result can be visualized using ggraph. Nodes are uniquely identified
 by their set of attributes. Disease/indication level nodes begin with
 “D\_” and mechanism level nodes begin with “M\_”.
 
-    plot_hierachy(tbls$concept, tbls$concept_relationship)
+    ggplot_hierachy(tbls$concept, tbls$concept_relationship)
 
     ## Loading required package: ggraph
 
     ## Loading required package: ggplot2
 
 ![](readme_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+
+For larger graphs we can use use plotly display node labels only when
+the cursor is hovering over a node.
+
+    plotly_hierachy(tbls$concept, tbls$concept_relationship, title = "Example Vaccine Hierarchy")
+
+    ## 
+    ## Attaching package: 'tidygraph'
+
+    ## The following object is masked from 'package:stats':
+    ## 
+    ##     filter
+
+    ## 
+    ## Attaching package: 'plotly'
+
+    ## The following object is masked from 'package:ggplot2':
+    ## 
+    ##     last_plot
+
+    ## The following object is masked from 'package:stats':
+    ## 
+    ##     filter
+
+    ## The following object is masked from 'package:graphics':
+    ## 
+    ##     layout
+
+    ## 
+    ## Attaching package: 'igraph'
+
+    ## The following object is masked from 'package:plotly':
+    ## 
+    ##     groups
+
+    ## The following object is masked from 'package:tidygraph':
+    ## 
+    ##     groups
+
+    ## The following objects are masked from 'package:dplyr':
+    ## 
+    ##     as_data_frame, groups, union
+
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     decompose, spectrum
+
+    ## The following object is masked from 'package:base':
+    ## 
+    ##     union
+
+<div id="htmlwidget-9265e0e700e8001efbd0" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9265e0e700e8001efbd0">{"x":{"visdat":{"c8ab6f51364b":["function () ","plotlyVisDat"]},"cur_data":"c8ab6f51364b","attrs":{"c8ab6f51364b":{"x":{},"y":{},"mode":"markers","text":["D_measles; D_mumps; D_rubella","M_poliovirus_live","D_measles; D_rubella","D_mumps","D_poliovirus","D_measles","D_rubella","Vaccine"],"hoverinfo":"text","marker":{"color":["#34b4eb","#eb3434","#34b4eb","#34b4eb","#34b4eb","#34b4eb","#34b4eb","#34b4eb"]},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Example Vaccine Hierarchy","shapes":[{"type":"line","line":{"color":"#030303","width":0.3},"x0":10.5007665076543,"y0":13.3684116217837,"x1":9.22475772774,"y1":12.8527061339669},{"type":"line","line":{"color":"#030303","width":0.3},"x0":9.729565392555,"y0":11.5522739738152,"x1":9.22475772774,"y1":12.8527061339669},{"type":"line","line":{"color":"#030303","width":0.3},"x0":12.2646082475363,"y0":9.69519909063449,"x1":13.0081478306501,"y1":8.48555274301838},{"type":"line","line":{"color":"#030303","width":0.3},"x0":10.9030209006687,"y0":12.350796455866,"x1":10.5007665076543,"y1":13.3684116217837},{"type":"line","line":{"color":"#030303","width":0.3},"x0":11.7544096319607,"y0":12.7385117319387,"x1":10.5007665076543,"y1":13.3684116217837},{"type":"line","line":{"color":"#030303","width":0.3},"x0":11.3262923874643,"y0":11.2325018659476,"x1":9.729565392555,"y1":11.5522739738152},{"type":"line","line":{"color":"#030303","width":0.3},"x0":11.3262923874643,"y0":11.2325018659476,"x1":12.2646082475363,"y1":9.69519909063449},{"type":"line","line":{"color":"#030303","width":0.3},"x0":11.3262923874643,"y0":11.2325018659476,"x1":10.9030209006687,"y1":12.350796455866},{"type":"line","line":{"color":"#030303","width":0.3},"x0":11.3262923874643,"y0":11.2325018659476,"x1":11.7544096319607,"y1":12.7385117319387}],"xaxis":{"domain":[0,1],"automargin":true,"title":"","showgrid":false,"showticklabels":false,"zeroline":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"","showgrid":false,"showticklabels":false,"zeroline":false},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[9.22475772774,13.0081478306501,10.5007665076543,9.729565392555,12.2646082475363,10.9030209006687,11.7544096319607,11.3262923874643],"y":[12.8527061339669,8.48555274301838,13.3684116217837,11.5522739738152,9.69519909063449,12.350796455866,12.7385117319387,11.2325018659476],"mode":"markers","text":["D_measles; D_mumps; D_rubella","M_poliovirus_live","D_measles; D_rubella","D_mumps","D_poliovirus","D_measles","D_rubella","Vaccine"],"hoverinfo":["text","text","text","text","text","text","text","text"],"marker":{"color":["#34b4eb","#eb3434","#34b4eb","#34b4eb","#34b4eb","#34b4eb","#34b4eb","#34b4eb"],"line":{"color":"rgba(31,119,180,1)"}},"type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 ## Additional resources
 
@@ -147,3 +200,6 @@ evaluated to date is available in “extras/Algorithm\_walkthrough.Rmd”
 A SQL script that attemps to automatically extract the decomposed
 attributes from vaccine source codes is available in the
 “extras/Decomposition” folder.
+
+The full output that has been generated using this approach to date is
+available in the “output” folder.
