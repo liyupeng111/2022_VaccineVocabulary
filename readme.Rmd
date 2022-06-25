@@ -8,6 +8,8 @@ always_allow_html: true
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Constructing a vaccine vocabulary hierarchy using formal concept analysis
+
 Vaccine concepts in the OMOP CDM Vocabulary lack a comprehensive and consistent hierarchy. In 2021 the vaccine vocabulary working group manually constructed a high-level vocabulary hierarchy for vaccine concepts. However, a manually curated hierarchy is difficult to maintain and scale up with proper quality control considering the large number concepts in existing vaccine vocabularies such as RxNorm and RxNorm Extension. An automated approach is needed to facilitate the creation of a high-quality and practically useful vocabulary hierarchy.
 We utilized Formal Concept Analysis (FCA), a computational method for automatically creating concept hierarchies rooted in the mathematical theory of lattices, to build a vaccine vocabulary. The required inputs are simply the vaccine source codes with the vaccine attributes (e.g., indication, administration route, and dosing). All nodes/concepts, linkage/hierarchical relationships between nodes and mappings from source to standard concepts are generated automatically. 
 

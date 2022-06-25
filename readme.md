@@ -1,3 +1,5 @@
+# Constructing a vaccine vocabulary hierarchy using formal concept analysis
+
 Vaccine concepts in the OMOP CDM Vocabulary lack a comprehensive and
 consistent hierarchy. In 2021 the vaccine vocabulary working group
 manually constructed a high-level vocabulary hierarchy for vaccine
