@@ -38,12 +38,13 @@ demonstration. An example of the input structure is shown below.
     ## 3 40213168 measles    rubella <NA>    <NA>           
     ## 4 40213170 measles    <NA>    <NA>    <NA>
 
-Our tool first creates a table with all unique combinations of
-indication and mechanism of action in the input. Attributes that are not
-explicitly encoded in the decomposition of the input source codes are
-ignored. Two source codes with the same set of attributes are considered
-to be the same vaccine and mapped to the same concept in the new
-hierarchy. This table is known as a “formal context”.
+First we create a table with all unique combinations of indication and
+mechanism of action in the input. Attributes that are not explicitly
+encoded in the decomposition of the input source codes are ignored. Two
+source codes with the same set of attributes are considered to be the
+same vaccine and mapped to the same concept in the new hierarchy. This
+table is known as a “formal context” in Formal Concept Analysis
+parlance.
 
     source("src/R/functions.R")
     ctx <- formal_context(df)
@@ -74,8 +75,8 @@ hierarchy. This table is known as a “formal context”.
     ## 6     6 ""        ""      ""        "X"          ""               
     ## 7     7 ""        ""      "X"       ""           ""
 
-Next us FCA to create the concept and concept\_relationship tables that
-define the hierarchical relationships (i.e. ‘Is a’ relationship).
+Next we use FCA to create the concept and concept\_relationship tables
+that define the hierarchical relationships (i.e. ‘Is a’ relationship).
 
     tbls <- create_concept_tables(ctx)
     tbls

@@ -25,7 +25,7 @@ df
 ```
 
 
-Our tool first creates a table with all unique combinations of indication and mechanism of action in the input. Attributes that are not explicitly encoded in the decomposition of the input source codes are ignored. Two source codes with the same set of attributes are considered to be the same vaccine and mapped to the same concept in the new hierarchy. This table is known as a "formal context".
+First we create a table with all unique combinations of indication and mechanism of action in the input. Attributes that are not explicitly encoded in the decomposition of the input source codes are ignored. Two source codes with the same set of attributes are considered to be the same vaccine and mapped to the same concept in the new hierarchy. This table is known as a "formal context" in Formal Concept Analysis parlance.
 
 ```{r}
 source("src/R/functions.R")
@@ -34,7 +34,7 @@ ctx
 ```
 
 
-Next us FCA to create the concept and concept_relationship tables that define the hierarchical relationships (i.e. 'Is a' relationship). 
+Next we use FCA to create the concept and concept_relationship tables that define the hierarchical relationships (i.e. 'Is a' relationship). 
 
 
 
