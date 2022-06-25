@@ -1,0 +1,65 @@
+---
+title: "Constructing a vaccine vocabulary hierarchy using formal concept analysis"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Vaccine concepts in the OMOP CDM Vocabulary lack a comprehensive and consistent hierarchy. In 2021 the vaccine vocabulary working group manually constructed a high-level vocabulary hierarchy for vaccine concepts. However, a manually curated hierarchy is difficult to maintain and scale up with proper quality control considering the large number concepts in existing vaccine vocabularies such as RxNorm and RxNorm Extension. An automated approach is needed to facilitate the creation of a high-quality and practically useful vocabulary hierarchy.
+We utilized Formal Concept Analysis (FCA), a computational method for automatically creating concept hierarchies rooted in the mathematical theory of lattices, to build a vaccine vocabulary. The required inputs are simply the vaccine source codes with the vaccine attributes (e.g., indication, administration route, and dosing). All nodes/concepts, linkage/hierarchical relationships between nodes and mappings from source to standard concepts are generated automatically. 
+
+
+The FCA method requires all vaccine source codes along with their relevant attributes as input. Given a large number of vaccine source codes in multiple vocabularies (e.g. CVX, NDC, CPT, and ICD Procedure), we used a subset of CVX, HCPCS, CPT, and ICD Procedure codes with two vaccine attributes (indication and mechanism of action) for feasibility demonstration. An example of the input structure is shown below. 
+
+```{r}
+df <- tibble::tribble(
+  ~vacc_id, ~d1,          ~d2,       ~d3,      ~m1, 
+  40213190, "poliovirus", NA,        NA,       "poliovirus live",
+  40213183, "measles",    "mumps",   "rubella", NA,
+  40213168, "measles",    "rubella", NA,        NA,
+  40213170, "measles",    NA,        NA,        NA)
+
+df
+```
+
+
+Our tool first creates a table with all unique combinations of indication and mechanism of action in the input. Attributes that are not explicitly encoded in the decomposition of the input source codes are ignored. Two source codes with the same set of attributes are considered to be the same vaccine and mapped to the same concept in the new hierarchy. This table is known as a "formal context".
+
+```{r}
+source("src/R/functions.R")
+ctx <- formal_context(df)
+ctx
+```
+
+
+Next us FCA to create the concept and concept_relationship tables that define the hierarchical relationships (i.e. 'Is a' relationship). 
+
+
+
+```{r}
+tbls <- create_concept_tables(ctx)
+tbls
+```
+
+
+Finally we generate mappings by matching the attribute list of the sources to the attribute list of the target concepts. Decomposed source codes will be mapped to the concept that has the exact same set of attributes.
+```{r}
+maps_to <- create_maps_to(df, tbls$concept)
+maps_to
+```
+
+
+The result can be visualized using ggraph. Nodes are uniquely identified by their set of attributes. Disease/indication level nodes begin with "D_" and mechanism level nodes begin with "M_".
+```{r}
+plot_hierachy(tbls$concept, tbls$concept_relationship)
+```
+
+## Additional resources
+
+A complete description of the algorithm using all vaccine source codes evaluated to date is available in "extras/Algorithm_walkthrough.Rmd"
+
+A SQL script that attemps to automatically extract the decomposed attributes from vaccine source codes is available in the "extras/Decomposition" folder.
+
+

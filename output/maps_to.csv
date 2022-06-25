@@ -1,0 +1,314 @@
+vacc_id,target_concept_id,source_attribute_set,target_attribute_set
+40213264,1,D_adenovirus; M_adenovirus_live,D_adenovirus; M_adenovirus_live
+40213265,1,D_adenovirus; M_adenovirus_live,D_adenovirus; M_adenovirus_live
+40213266,1,D_adenovirus; M_adenovirus_live,D_adenovirus; M_adenovirus_live
+2213422,1,D_adenovirus; M_adenovirus_live,D_adenovirus; M_adenovirus_live
+2213423,1,D_adenovirus; M_adenovirus_live,D_adenovirus; M_adenovirus_live
+40213268,2,D_anthrax,D_anthrax
+2213424,2,D_anthrax,D_anthrax
+40213275,3,D_cholera,D_cholera
+42628540,3,D_cholera,D_cholera
+2213481,3,D_cholera,D_cholera
+724906,4,D_covid_19; M_covid_19_mRNA,D_covid_19; M_covid_19_mRNA
+724907,4,D_covid_19; M_covid_19_mRNA,D_covid_19; M_covid_19_mRNA
+724905,5,D_covid_19; M_covid_19_vector,D_covid_19; M_covid_19_vector
+702866,5,D_covid_19; M_covid_19_vector,D_covid_19; M_covid_19_vector
+40213278,6,D_dengue,D_dengue
+42628615,6,D_dengue,D_dengue
+40213279,7,D_diphtheria; M_diphtheria_antitoxin,D_diphtheria; M_diphtheria_antitoxin
+2213401,7,D_diphtheria; M_diphtheria_antitoxin,D_diphtheria; M_diphtheria_antitoxin
+2213460,8,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid; M_whole_cell_pertussis,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_whole_cell_pertussis
+40213288,11,D_diphtheria; D_tetanus; D_pertussis; D_poliovirus; D_haemophilus_influenza; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis; M_poliovirus_inactivated; M_haemophilus_influenza_conjugate,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis; D_haemophilus_influenza; M_haemophilus_influenza_conjugate; D_poliovirus; M_poliovirus_inactivated
+40213285,11,D_diphtheria; D_tetanus; D_pertussis; D_poliovirus; D_haemophilus_influenza; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis; M_poliovirus_inactivated; M_haemophilus_influenza_conjugate,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis; D_haemophilus_influenza; M_haemophilus_influenza_conjugate; D_poliovirus; M_poliovirus_inactivated
+40213298,13,D_hepatitis_a; M_hepatitis_a_live,D_hepatitis_a; M_hepatitis_a_live
+40213303,14,D_hepatitis_a; D_hepatitis_b,D_hepatitis_b; D_hepatitis_a
+706109,14,D_hepatitis_a; D_hepatitis_b,D_hepatitis_b; D_hepatitis_a
+2213430,14,D_hepatitis_a; D_hepatitis_b,D_hepatitis_b; D_hepatitis_a
+40213309,15,D_hepatitis_c,D_hepatitis_c
+40213310,16,D_hepatitis_e,D_hepatitis_e
+40213319,17,D_human_papilomavirus,D_human_papilomavirus
+40213321,17,D_human_papilomavirus,D_human_papilomavirus
+40213322,17,D_human_papilomavirus,D_human_papilomavirus
+40213320,17,D_human_papilomavirus,D_human_papilomavirus
+46257428,17,D_human_papilomavirus,D_human_papilomavirus
+709848,17,D_human_papilomavirus,D_human_papilomavirus
+2213435,17,D_human_papilomavirus,D_human_papilomavirus
+2213436,17,D_human_papilomavirus,D_human_papilomavirus
+40213149,18,D_influenza; M_influenza_live,D_influenza; M_influenza_live
+40213188,18,D_influenza; M_influenza_live,D_influenza; M_influenza_live
+40213150,18,D_influenza; M_influenza_live,D_influenza; M_influenza_live
+43527981,18,D_influenza; M_influenza_live,D_influenza; M_influenza_live
+40756887,18,D_influenza; M_influenza_live,D_influenza; M_influenza_live
+2213442,18,D_influenza; M_influenza_live,D_influenza; M_influenza_live
+40213151,19,D_influenza; M_influenza_recomb,D_influenza; M_influenza_recomb
+40213152,19,D_influenza; M_influenza_recomb,D_influenza; M_influenza_recomb
+44816443,19,D_influenza; M_influenza_recomb,D_influenza; M_influenza_recomb
+42628541,19,D_influenza; M_influenza_recomb,D_influenza; M_influenza_recomb
+44786606,19,D_influenza; M_influenza_recomb,D_influenza; M_influenza_recomb
+40213163,20,D_japanese_encephalitis,D_japanese_encephalitis
+40213161,20,D_japanese_encephalitis,D_japanese_encephalitis
+40213162,20,D_japanese_encephalitis,D_japanese_encephalitis
+2213486,20,D_japanese_encephalitis,D_japanese_encephalitis
+2213488,20,D_japanese_encephalitis,D_japanese_encephalitis
+40213165,21,D_leishmaniasis,D_leishmaniasis
+40213166,22,D_leprosy,D_leprosy
+40213169,23,D_malaria,D_malaria
+40213184,24,D_measles; D_rubella; D_mumps; D_varicella,D_measles; D_rubella; D_mumps; D_varicella
+40213179,25,D_meningococcal; M_meningococcal_oligosaccharide,D_meningococcal; M_meningococcal_oligosaccharide
+40213180,26,D_meningococcal; M_meningococcal_polysaccharide,D_meningococcal; M_meningococcal_polysaccharide
+706107,26,D_meningococcal; M_meningococcal_polysaccharide,D_meningococcal; M_meningococcal_polysaccharide
+706108,26,D_meningococcal; M_meningococcal_polysaccharide,D_meningococcal; M_meningococcal_polysaccharide
+724901,26,D_meningococcal; M_meningococcal_polysaccharide,D_meningococcal; M_meningococcal_polysaccharide
+40213181,26,D_meningococcal; M_meningococcal_polysaccharide,D_meningococcal; M_meningococcal_polysaccharide
+2213484,26,D_meningococcal; M_meningococcal_polysaccharide,D_meningococcal; M_meningococcal_polysaccharide
+40213174,27,D_meningococcal; M_meningococcal_recombinant,D_meningococcal; M_meningococcal_recombinant
+40213173,27,D_meningococcal; M_meningococcal_recombinant,D_meningococcal; M_meningococcal_recombinant
+46257761,27,D_meningococcal; M_meningococcal_recombinant,D_meningococcal; M_meningococcal_recombinant
+46257760,27,D_meningococcal; M_meningococcal_recombinant,D_meningococcal; M_meningococcal_recombinant
+40213284,28,D_meningococcal; D_pertussis; D_poliovirus; D_hepatitis_b; D_haemophilus_influenza; M_meningococcal_conjugate; M_acellular_pertussis; M_poliovirus_inactivated; M_hepatitis_b_recombinant; M_haemophilus_influenza_conjugate,D_pertussis; M_acellular_pertussis; D_haemophilus_influenza; D_hepatitis_b; M_hepatitis_b_recombinant; M_haemophilus_influenza_conjugate; D_poliovirus; M_poliovirus_inactivated; D_meningococcal; M_meningococcal_conjugate
+40213194,29,D_parainfluenza,D_parainfluenza
+40213197,30,D_plague,D_plague
+2213482,30,D_plague,D_plague
+40213199,31,D_pneumococcal; M_pneumococcal_conjugate,D_pneumococcal; M_pneumococcal_conjugate
+40213198,31,D_pneumococcal; M_pneumococcal_conjugate,D_pneumococcal; M_pneumococcal_conjugate
+40213200,31,D_pneumococcal; M_pneumococcal_conjugate,D_pneumococcal; M_pneumococcal_conjugate
+40213195,31,D_pneumococcal; M_pneumococcal_conjugate,D_pneumococcal; M_pneumococcal_conjugate
+2213447,31,D_pneumococcal; M_pneumococcal_conjugate,D_pneumococcal; M_pneumococcal_conjugate
+2213448,31,D_pneumococcal; M_pneumococcal_conjugate,D_pneumococcal; M_pneumococcal_conjugate
+2721008,31,D_pneumococcal; M_pneumococcal_conjugate,D_pneumococcal; M_pneumococcal_conjugate
+40213201,32,D_pneumococcal; M_pneumococcal_polysaccharide,D_pneumococcal; M_pneumococcal_polysaccharide
+40217230,32,D_pneumococcal; M_pneumococcal_polysaccharide,D_pneumococcal; M_pneumococcal_polysaccharide
+40213190,33,D_poliovirus; M_poliovirus_live,D_poliovirus; M_poliovirus_live
+2213470,33,D_poliovirus; M_poliovirus_live,D_poliovirus; M_poliovirus_live
+40213205,34,D_rabies,D_rabies
+40213206,34,D_rabies,D_rabies
+40213208,34,D_rabies,D_rabies
+40213207,34,D_rabies,D_rabies
+40213209,34,D_rabies,D_rabies
+2722274,34,D_rabies,D_rabies
+2213449,34,D_rabies,D_rabies
+2213450,34,D_rabies,D_rabies
+2008320,34,D_rabies,D_rabies
+40213217,35,D_rotavirus; M_rotavirus_live,D_rotavirus; M_rotavirus_live
+40213216,35,D_rotavirus; M_rotavirus_live,D_rotavirus; M_rotavirus_live
+40213218,35,D_rotavirus; M_rotavirus_live,D_rotavirus; M_rotavirus_live
+2213451,35,D_rotavirus; M_rotavirus_live,D_rotavirus; M_rotavirus_live
+2213452,35,D_rotavirus; M_rotavirus_live,D_rotavirus; M_rotavirus_live
+40213249,36,D_smallpox,D_smallpox
+724903,36,D_smallpox,D_smallpox
+40213248,36,D_smallpox,D_smallpox
+40213235,37,D_tick_borne_encephalitis,D_tick_borne_encephalitis
+40213241,38,D_tularemia,D_tularemia
+2008291,38,D_tularemia,D_tularemia
+40213243,39,D_typhoid; M_typhoid_acetone_killed,D_typhoid; M_typhoid_acetone_killed
+40213244,39,D_typhoid; M_typhoid_acetone_killed,D_typhoid; M_typhoid_acetone_killed
+2213456,39,D_typhoid; M_typhoid_acetone_killed,D_typhoid; M_typhoid_acetone_killed
+706106,40,D_typhoid; M_typhoid_conjugate,D_typhoid; M_typhoid_conjugate
+40213242,41,D_typhoid; M_typhoid_live,D_typhoid; M_typhoid_live
+2213453,41,D_typhoid; M_typhoid_live,D_typhoid; M_typhoid_live
+40213246,42,D_typhoid; M_typhoid_polysaccharide,D_typhoid; M_typhoid_polysaccharide
+2213454,42,D_typhoid; M_typhoid_polysaccharide,D_typhoid; M_typhoid_polysaccharide
+40213260,43,D_varicella; M_varicella_live,D_varicella; M_varicella_live
+2213474,43,D_varicella; M_varicella_live,D_varicella; M_varicella_live
+2213487,43,D_varicella; M_varicella_live,D_varicella; M_varicella_live
+40217226,43,D_varicella; M_varicella_live,D_varicella; M_varicella_live
+706103,44,D_varicella; M_varicella_recombinant,D_varicella; M_varicella_recombinant
+42628616,44,D_varicella; M_varicella_recombinant,D_varicella; M_varicella_recombinant
+40213252,45,D_Venezuelan_equine_encephalitis; M_Venezuelan_equine_encephalitis_inactivated,D_Venezuelan_equine_encephalitis; M_Venezuelan_equine_encephalitis_inactivated
+40213253,46,D_Venezuelan_equine_encephalitis; M_Venezuelan_equine_encephalitis_live,D_Venezuelan_equine_encephalitis; M_Venezuelan_equine_encephalitis_live
+40213258,47,D_yellow_fever,D_yellow_fever
+40213259,47,D_yellow_fever,D_yellow_fever
+40213257,47,D_yellow_fever,D_yellow_fever
+2213475,47,D_yellow_fever,D_yellow_fever
+2008319,47,D_yellow_fever,D_yellow_fever
+40213267,48,D_adenovirus,D_adenovirus
+40213289,52,D_diphtheria; D_tetanus; D_pertussis; D_poliovirus; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis; M_poliovirus_inactivated,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis; D_poliovirus; M_poliovirus_inactivated
+2213457,52,D_diphtheria; D_tetanus; D_pertussis; D_poliovirus; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis; M_poliovirus_inactivated,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis; D_poliovirus; M_poliovirus_inactivated
+40213183,55,D_measles; D_rubella; D_mumps,D_measles; D_rubella; D_mumps
+2213466,55,D_measles; D_rubella; D_mumps,D_measles; D_rubella; D_mumps
+2008334,55,D_measles; D_rubella; D_mumps,D_measles; D_rubella; D_mumps
+40213177,56,D_meningococcal; D_haemophilus_influenza; M_meningococcal_conjugate; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate; D_meningococcal; M_meningococcal_conjugate
+40757102,56,D_meningococcal; D_haemophilus_influenza; M_meningococcal_conjugate; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate; D_meningococcal; M_meningococcal_conjugate
+40213219,58,D_rotavirus,D_rotavirus
+724904,59,D_covid_19,D_covid_19
+766238,59,D_covid_19,D_covid_19
+766239,59,D_covid_19,D_covid_19
+766241,59,D_covid_19,D_covid_19
+766240,59,D_covid_19,D_covid_19
+766234,59,D_covid_19,D_covid_19
+766235,59,D_covid_19,D_covid_19
+766236,59,D_covid_19,D_covid_19
+766237,59,D_covid_19,D_covid_19
+766231,59,D_covid_19,D_covid_19
+766232,59,D_covid_19,D_covid_19
+766233,59,D_covid_19,D_covid_19
+42639775,59,D_covid_19,D_covid_19
+42639776,59,D_covid_19,D_covid_19
+42639777,59,D_covid_19,D_covid_19
+42639778,59,D_covid_19,D_covid_19
+42639779,59,D_covid_19,D_covid_19
+42639780,59,D_covid_19,D_covid_19
+724900,60,D_diphtheria; D_tetanus; D_pertussis; D_hepatitis_b; D_haemophilus_influenza,D_diphtheria; D_tetanus; D_pertussis; D_haemophilus_influenza; D_hepatitis_b
+706105,61,D_hepatitis_b; M_hepatitis_b_recombinant,D_hepatitis_b; M_hepatitis_b_recombinant
+40213301,65,D_hepatitis_a,D_hepatitis_a
+40213296,65,D_hepatitis_a,D_hepatitis_a
+40213299,65,D_hepatitis_a,D_hepatitis_a
+40213300,65,D_hepatitis_a,D_hepatitis_a
+40213302,65,D_hepatitis_a,D_hepatitis_a
+2722276,65,D_hepatitis_a,D_hepatitis_a
+42741641,65,D_hepatitis_a,D_hepatitis_a
+2213427,65,D_hepatitis_a,D_hepatitis_a
+2213428,65,D_hepatitis_a,D_hepatitis_a
+2213429,65,D_hepatitis_a,D_hepatitis_a
+40213168,66,D_measles; D_rubella,D_measles; D_rubella
+2213467,66,D_measles; D_rubella,D_measles; D_rubella
+40213224,67,D_rubella; D_mumps,D_rubella; D_mumps
+42738311,67,D_rubella; D_mumps,D_rubella; D_mumps
+40213176,68,D_meningococcal; M_meningococcal_conjugate,D_meningococcal; M_meningococcal_conjugate
+40213178,68,D_meningococcal; M_meningococcal_conjugate,D_meningococcal; M_meningococcal_conjugate
+710009,68,D_meningococcal; M_meningococcal_conjugate,D_meningococcal; M_meningococcal_conjugate
+2213485,68,D_meningococcal; M_meningococcal_conjugate,D_meningococcal; M_meningococcal_conjugate
+40213202,69,D_pneumococcal,D_pneumococcal
+2617178,69,D_pneumococcal,D_pneumococcal
+40217228,69,D_pneumococcal,D_pneumococcal
+40213254,70,D_Venezuelan_equine_encephalitis,D_Venezuelan_equine_encephalitis
+40213282,71,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis
+40213283,71,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis
+40213230,71,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis
+40213281,71,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis
+2213459,71,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis
+2213473,71,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid; M_acellular_pertussis,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis; M_acellular_pertussis
+40213140,74,D_influenza,D_influenza
+40213189,74,D_influenza,D_influenza
+40213186,74,D_influenza,D_influenza
+40213187,74,D_influenza,D_influenza
+40213141,74,D_influenza,D_influenza
+40213154,74,D_influenza,D_influenza
+40213153,74,D_influenza,D_influenza
+40213155,74,D_influenza,D_influenza
+40213156,74,D_influenza,D_influenza
+40213146,74,D_influenza,D_influenza
+40213327,74,D_influenza,D_influenza
+40213142,74,D_influenza,D_influenza
+40213145,74,D_influenza,D_influenza
+40213159,74,D_influenza,D_influenza
+40213326,74,D_influenza,D_influenza
+40213147,74,D_influenza,D_influenza
+40213148,74,D_influenza,D_influenza
+40213157,74,D_influenza,D_influenza
+40213143,74,D_influenza,D_influenza
+40213144,74,D_influenza,D_influenza
+724893,74,D_influenza,D_influenza
+724896,74,D_influenza,D_influenza
+724897,74,D_influenza,D_influenza
+724898,74,D_influenza,D_influenza
+724899,74,D_influenza,D_influenza
+724902,74,D_influenza,D_influenza
+40213158,74,D_influenza,D_influenza
+46257714,74,D_influenza,D_influenza
+2722273,74,D_influenza,D_influenza
+2722277,74,D_influenza,D_influenza
+725110,74,D_influenza,D_influenza
+43527980,74,D_influenza,D_influenza
+40757097,74,D_influenza,D_influenza
+42742499,74,D_influenza,D_influenza
+42739375,74,D_influenza,D_influenza
+44816518,74,D_influenza,D_influenza
+44816520,74,D_influenza,D_influenza
+44816521,74,D_influenza,D_influenza
+44816519,74,D_influenza,D_influenza
+40756874,74,D_influenza,D_influenza
+40756960,74,D_influenza,D_influenza
+42628611,74,D_influenza,D_influenza
+2213437,74,D_influenza,D_influenza
+2213438,74,D_influenza,D_influenza
+2213431,74,D_influenza,D_influenza
+2213432,74,D_influenza,D_influenza
+2213439,74,D_influenza,D_influenza
+710010,74,D_influenza,D_influenza
+927158,74,D_influenza,D_influenza
+2213443,74,D_influenza,D_influenza
+2213445,74,D_influenza,D_influenza
+2213440,74,D_influenza,D_influenza
+2617177,74,D_influenza,D_influenza
+40217223,74,D_influenza,D_influenza
+40217222,74,D_influenza,D_influenza
+40662774,74,D_influenza,D_influenza
+40663275,74,D_influenza,D_influenza
+40217694,74,D_influenza,D_influenza
+43533288,74,D_influenza,D_influenza
+40664557,74,D_influenza,D_influenza
+40664421,74,D_influenza,D_influenza
+40664566,74,D_influenza,D_influenza
+40664532,74,D_influenza,D_influenza
+40664584,74,D_influenza,D_influenza
+43018333,74,D_influenza,D_influenza
+1531633,74,D_influenza,D_influenza
+2008337,74,D_influenza,D_influenza
+40213160,75,D_poliovirus; M_poliovirus_inactivated,D_poliovirus; M_poliovirus_inactivated
+2213471,75,D_poliovirus; M_poliovirus_inactivated,D_poliovirus; M_poliovirus_inactivated
+40213170,77,D_measles,D_measles
+2213464,77,D_measles,D_measles
+2008321,77,D_measles,D_measles
+40213185,78,D_mumps,D_mumps
+2213463,78,D_mumps,D_mumps
+2008332,78,D_mumps,D_mumps
+706104,79,D_varicella,D_varicella
+40213251,79,D_varicella,D_varicella
+40217225,79,D_varicella,D_varicella
+40213291,81,D_diphtheria; D_tetanus; D_pertussis; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid; D_pertussis
+40213223,84,D_rubella,D_rubella
+2213465,84,D_rubella,D_rubella
+2008333,84,D_rubella,D_rubella
+40213245,85,D_typhoid,D_typhoid
+2213455,85,D_typhoid,D_typhoid
+2008288,85,D_typhoid,D_typhoid
+40213228,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+40213227,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+40213226,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+724895,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+40213280,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+2213461,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+2213476,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+2213472,86,D_diphtheria; D_tetanus; M_diphtheria_toxoid; M_tetanus_toxoid,D_diphtheria; M_diphtheria_toxoid; D_tetanus; M_tetanus_toxoid
+2213494,89,D_hepatitis_b; D_haemophilus_influenza,D_haemophilus_influenza; D_hepatitis_b
+40213316,90,D_haemophilus_influenza; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate
+40213313,90,D_haemophilus_influenza; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate
+40213312,90,D_haemophilus_influenza; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate
+40213315,90,D_haemophilus_influenza; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate
+40213314,90,D_haemophilus_influenza; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate
+2213433,90,D_haemophilus_influenza; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate
+2213434,90,D_haemophilus_influenza; M_haemophilus_influenza_conjugate,D_haemophilus_influenza; M_haemophilus_influenza_conjugate
+2213477,92,D_diphtheria; M_diphtheria_toxoid,D_diphtheria; M_diphtheria_toxoid
+2008312,92,D_diphtheria; M_diphtheria_toxoid,D_diphtheria; M_diphtheria_toxoid
+40213234,93,D_tetanus; M_tetanus_toxoid,D_tetanus; M_tetanus_toxoid
+40213233,93,D_tetanus; M_tetanus_toxoid,D_tetanus; M_tetanus_toxoid
+40213232,93,D_tetanus; M_tetanus_toxoid,D_tetanus; M_tetanus_toxoid
+2213462,93,D_tetanus; M_tetanus_toxoid,D_tetanus; M_tetanus_toxoid
+2008314,93,D_tetanus; M_tetanus_toxoid,D_tetanus; M_tetanus_toxoid
+724894,95,D_diphtheria; D_tetanus; D_poliovirus,D_diphtheria; D_tetanus; D_poliovirus
+40213172,98,D_meningococcal,D_meningococcal
+40213175,98,D_meningococcal,D_meningococcal
+40213182,98,D_meningococcal,D_meningococcal
+40213304,99,D_hepatitis_b,D_hepatitis_b
+40213305,99,D_hepatitis_b,D_hepatitis_b
+40213306,99,D_hepatitis_b,D_hepatitis_b
+40213307,99,D_hepatitis_b,D_hepatitis_b
+40213308,99,D_hepatitis_b,D_hepatitis_b
+2722280,99,D_hepatitis_b,D_hepatitis_b
+43527982,99,D_hepatitis_b,D_hepatitis_b
+42741643,99,D_hepatitis_b,D_hepatitis_b
+2213490,99,D_hepatitis_b,D_hepatitis_b
+2213491,99,D_hepatitis_b,D_hepatitis_b
+2213492,99,D_hepatitis_b,D_hepatitis_b
+2617179,99,D_hepatitis_b,D_hepatitis_b
+40218609,99,D_hepatitis_b,D_hepatitis_b
+40213192,100,D_poliovirus,D_poliovirus
+40213191,100,D_poliovirus,D_poliovirus
+40213193,100,D_poliovirus,D_poliovirus
+40213203,100,D_poliovirus,D_poliovirus
+2008317,100,D_poliovirus,D_poliovirus
+2008315,101,D_diphtheria; D_tetanus; D_pertussis,D_diphtheria; D_tetanus; D_pertussis
+2008341,104,D_tetanus,D_tetanus
+40213196,106,D_pertussis,D_pertussis
+2008313,106,D_pertussis,D_pertussis
