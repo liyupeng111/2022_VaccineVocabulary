@@ -151,7 +151,7 @@ the cursor is hovering over a node.
 A complete description of the algorithm using all vaccine source codes
 evaluated to date is available in “extras/Algorithm\_walkthrough.Rmd”
 
-A SQL script that attemps to automatically extract the decomposed
+A SQL script that attempts to automatically extract the decomposed
 attributes from vaccine source codes is available in the
 “extras/Decomposition” folder.
 
